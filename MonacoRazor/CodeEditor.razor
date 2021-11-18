@@ -17,7 +17,7 @@
     {
         thisReference = DotNetObjectReference.Create(this);
         moduleTask = new(() => JS.InvokeAsync<IJSObjectReference>(
-           "import", "./_content/MonacoRazor/main.js").AsTask());
+           "import", "./main.js").AsTask());
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
